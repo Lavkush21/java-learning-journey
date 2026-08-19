@@ -1,0 +1,12 @@
+-Dfile.encoding=UTF-8
+-Dstdout.encoding=UTF-8
+-Dstderr.encoding=UTF-8
+-p
+"C:\\Users\\lavku\\OneDrive\\Desktop\\practice\\java01_learning021_journey\\Oops\\bin"
+-XX:+ShowCodeDetailsInExceptionMessages
+-m
+Oops/com.oops.staticdemo.StaticDemo
+Lavkush
+gupta
+Hello
+bosss
