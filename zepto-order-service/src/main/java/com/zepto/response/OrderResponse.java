@@ -1,41 +1,44 @@
 package com.zepto.response;
 
 public class OrderResponse {
-	private String orderId;
-	private Long customerId;
-	private Double totalAmount;
-	private String paymentStatus;
-	private String orderStatus;
+	private int id;
+	private int orderId;
+	private int customerId;
+	private int productId;
 
-	// Getters and Setters
-	public String getOrderId() {
+	public int getProductId() {
+		return productId;
+	}
+	public void setProductId(int productId) {
+		this.productId = productId;
+	}
+	private int quantity;
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public int getOrderId() {
 		return orderId;
 	}
-	public void setOrderId(String orderId) {
+	public void setOrderId(int orderId) {
 		this.orderId = orderId;
 	}
-	public Long getCustomerId() {
+	public int getCustomerId() {
 		return customerId;
 	}
-	public void setCustomerId(Long customerId) {
+	public void setCustomerId(int customerId) {
 		this.customerId = customerId;
 	}
-	public Double getTotalAmount() {
-		return totalAmount;
+	public int getQuantity() {
+		return quantity;
 	}
-	public void setTotalAmount(Double totalAmount) {
-		this.totalAmount = totalAmount;
+	public void setQuantity(int quantity) {
+		this.quantity = quantity;
 	}
-	public String getPaymentStatus() {
-		return paymentStatus;
-	}
-	public void setPaymentStatus(String paymentStatus) {
-		this.paymentStatus = paymentStatus;
-	}
-	public String getOrderStatus() {
-		return orderStatus;
-	}
-	public void setOrderStatus(String orderStatus) {
-		this.orderStatus = orderStatus;
-	}
+	
+	
+	
+	
 }
