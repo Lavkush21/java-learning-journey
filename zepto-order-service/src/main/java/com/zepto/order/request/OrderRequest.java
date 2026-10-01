@@ -1,12 +1,19 @@
 package com.zepto.order.request;
 
 public class OrderRequest {
-	
-	private int customerId;
-	private int productId;
-	private int quantity;
+
+    private int customerId;
+    private int productId;
+    private int quantity;
+    private int OrderId;
+    public int getOrderId() {
+		return OrderId;
+	}
+	public void setOrderId(int orderId) {
+		OrderId = orderId;
+	}
 	private String paymentMethod;
-	private String shippingAddress;
+    private String shippingAddress;
 	public int getCustomerId() {
 		return customerId;
 	}
@@ -37,6 +44,5 @@ public class OrderRequest {
 	public void setShippingAddress(String shippingAddress) {
 		this.shippingAddress = shippingAddress;
 	}
-
-
+    
 }

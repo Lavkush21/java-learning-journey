@@ -1,43 +1,22 @@
-package com.zepto.entity;
+package com.zepto.order.response;
+public class OrderResponse {
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
-
-
-@Entity
-@Table(name = "orders")
-public class OrderEntity {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    private int orderId;
     private int customerId;
     private int productId;
     private int quantity;
-    private String paymentMethod;
-    private String shippingAddress;
-    private String paymentMethd;
-	public String getPaymentMethd() {
-		return paymentMethd;
+    private int OrderId;
+    public int getOrderId() {
+		return OrderId;
 	}
-	public void setPaymentMethd(String paymentMethd) {
-		this.paymentMethd = paymentMethd;
+	public void setOrderId(int orderId) {
+		OrderId = orderId;
 	}
 	public int getId() {
 		return id;
 	}
 	public void setId(int id) {
 		this.id = id;
-	}
-	public int getOrderId() {
-		return orderId;
-	}
-	public void setOrderId(int orderId) {
-		this.orderId = orderId;
 	}
 	public int getCustomerId() {
 		return customerId;
@@ -69,5 +48,9 @@ public class OrderEntity {
 	public void setShippingAddress(String shippingAddress) {
 		this.shippingAddress = shippingAddress;
 	}
-    
-}
+	private String paymentMethod;
+    private String shippingAddress;
+	
+		// TODO Auto-generated method stub
+		
+	}
